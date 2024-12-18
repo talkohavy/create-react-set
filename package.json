@@ -1,0 +1,56 @@
+{
+  "name": "create-react-set",
+  "version": "0.0.0",
+  "description": "A tool to create a react functional component.",
+  "private": "true",
+  "type": "module",
+  "keywords": ["react", "cli"],
+  "bin": "index.js",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.js",
+      "default": "./dist/index.js"
+    }
+  },
+  "scripts": {
+    "clean": "rm -rf dist",
+    "lint": "eslint -c ./.eslintrc.json \"./src/**/*.ts\"",
+    "format-check": "prettier . --check",
+    "format-fix": "prettier . --write",
+    "test": "node --test",
+    "typecheck": "tsc -p tsconfig.json",
+    "build": "export NODE_ENV=production && node ./build.config.js",
+    "build:dev": "export NODE_ENV=development && node ./build.config.js",
+    "dev": "node dist/index.js"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/",
+    "access": "restricted"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/talkohavy/create-react-set.git"
+  },
+  "bugs": {
+    "url": "https://github.com/talkohavy/create-react-set/issues",
+    "email": "talkohavy@gmail.com"
+  },
+  "author": "Tal Kohavy <talkohavy@gmail.com> (https://github.com/talkohavy)",
+  "license": "MIT",
+  "dependencies": {
+    "@inquirer/prompts": "^7.2.0",
+    "yargs": "^17.7.2"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.2",
+    "@types/yargs": "^17.0.33",
+    "esbuild": "^0.24.0",
+    "eslint": "^9.17.0",
+    "eslint-plugin-react-compiler": "19.0.0-beta-201e55d-20241215",
+    "globals": "^15.14.0",
+    "husky": "^9.1.7",
+    "prettier": "^3.4.2",
+    "typescript": "^5.7.2",
+    "typescript-eslint": "^8.18.1"
+  }
+}
