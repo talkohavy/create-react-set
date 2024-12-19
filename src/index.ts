@@ -51,7 +51,7 @@ async function run() {
     process.exit(0);
   }
 
-  if (flags.help || !commands.length) {
+  if (flags.help) {
     const helpMenuAsText = await yargInstance.getHelp();
     const helpTextBig = `${toolNameBigText}${os.EOL}${os.EOL}${helpMenuAsText}`;
     console.log(helpTextBig);
