@@ -1,5 +1,11 @@
 # create-react-set
 
+## 0.0.6
+
+### Patch Changes
+
+- Added a line-break to the index.ts file.
+
 ## 0.0.5
 
 ### Patch Changes
