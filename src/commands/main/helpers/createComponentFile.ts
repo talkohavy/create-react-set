@@ -18,7 +18,7 @@ export default function ${COMPONENT_NAME_PLACEHOLDER}(props: ${COMPONENT_NAME_PL
 `;
 
 export function createComponentFile(targetDir: string, componentName: string) {
-  const filePath = path.join(targetDir, `${componentName}.ts`);
+  const filePath = path.join(targetDir, `${componentName}.tsx`);
 
   fs.writeFileSync(filePath, fileContents);
 
