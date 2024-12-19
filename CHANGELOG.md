@@ -1,5 +1,11 @@
 # create-react-set
 
+## 0.0.5
+
+### Patch Changes
+
+- BUGFIX: forgot to replace the template placeholder with the component's name.
+
 ## 0.0.4
 
 ### Patch Changes
