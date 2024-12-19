@@ -1,5 +1,11 @@
 # create-react-set
 
+## 0.0.4
+
+### Patch Changes
+
+- BUGFIX: components file should have been with a .tsx extension, not .ts.
+
 ## 0.0.3
 
 ### Patch Changes
