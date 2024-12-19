@@ -26,7 +26,7 @@ export async function main() {
   createFolder(targetDir);
   createCssFile(targetDir, componentName);
   const componentFilenameFullPath = createComponentFile(targetDir, componentName);
-  createIndexTsFile(targetDir);
+  createIndexTsFile(targetDir, componentName);
 
   logger.info(`✅  Component "${componentName}" has been created ${COLORS.green}successfully${COLORS.stop}.`);
   logger.info('✅  You can navigate to your component file here:');
