@@ -1,5 +1,11 @@
 # create-react-set
 
+## 0.0.7
+
+### Patch Changes
+
+- BUGFIX: lowercaseFirstChar was used in the wrong place.
+
 ## 0.0.6
 
 ### Patch Changes
