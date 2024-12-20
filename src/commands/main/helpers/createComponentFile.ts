@@ -20,7 +20,9 @@ export default function ${COMPONENT_NAME_PLACEHOLDER}(props: ${COMPONENT_NAME_PL
 export function createComponentFile(targetDir: string, componentName: string) {
   const filePath = path.join(targetDir, `${componentName}.tsx`);
 
-  const fileContents = fileContentsTemplate.replaceAll(COMPONENT_NAME_PLACEHOLDER, componentName);
+  const fileContents = fileContentsTemplate
+    .replaceAll(COMPONENT_NAME_PLACEHOLDER, componentName)
+    .replaceAll(`styles.${componentName}`, `styles.${lowercaseFirstChar(componentName)}`);
 
   fs.writeFileSync(filePath, fileContents);
 
