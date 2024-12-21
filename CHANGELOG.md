@@ -1,5 +1,11 @@
 # create-react-set
 
+## 0.0.8
+
+### Patch Changes
+
+- Added a "name" flag to bypass the component name inquire.
+
 ## 0.0.7
 
 ### Patch Changes
