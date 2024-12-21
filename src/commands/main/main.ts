@@ -7,8 +7,14 @@ import { createCssFile } from './helpers/createCssFile.js';
 import { COLORS } from '../../common/constants/colors.js';
 import { createComponentFile } from './helpers/createComponentFile.js';
 
-export async function main() {
-  const componentNameInput = await inquireValue({ message: 'Component Name:' });
+type MainProps = {
+  name?: string;
+};
+
+export async function main(props: MainProps) {
+  const { name } = props;
+
+  const componentNameInput = name ?? (await inquireValue({ message: 'Component Name:' }));
 
   const componentName = componentNameInput.trim().replace(/[^a-zA-Z0-9_-]/g, '');
 

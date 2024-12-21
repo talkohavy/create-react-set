@@ -27,6 +27,11 @@ const yargInstance = yargs(hideBin(process.argv))
       type: 'boolean',
       description: 'Show help manual',
     },
+    name: {
+      alias: 'n',
+      type: 'string',
+      description: 'Name of component',
+    },
   })
   .showHelpOnFail(false, 'Specify --help for available options')
   .strict()
